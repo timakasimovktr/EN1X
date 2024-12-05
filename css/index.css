@@ -8,6 +8,18 @@ body {
     margin: 0;
 }
 
+.logoLinkHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoHeader{
+    width: 20px;
+    height: 20px;
+}
+
 article,
 aside,
 details,
@@ -11402,6 +11414,8 @@ em {
     margin-right: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
 }
 
@@ -11493,7 +11507,6 @@ em {
 
 .brands_content-img {
     height: 100%;
-    max-height: 2.5rem;
 }
 
 .brands_content-img.is_1-5rem {
@@ -17856,7 +17869,7 @@ em {
     }
 
     .brands_content-list {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .bp-v2 {
