@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -2540,8 +2542,6 @@ textarea.w-select {
     .w-layout-blockcontainer {
         max-width: 728px;
     }
-
-    ;
 }
 
 @media screen and (max-width: 767px) {
@@ -6268,6 +6268,7 @@ em {
     margin-bottom: 0;
     font-size: 5rem;
     line-height: 110%;
+    font-family: "Unbounded", serif;
 }
 
 .heading-style-h1.text-weight-900.position-relative-9 {
@@ -10827,11 +10828,153 @@ em {
 
 .banner_home-hero {
     border-bottom: 1px solid var(--dark--jade-8);
-    background-color: var(--dark--jade-2);
+    background-color: #1f7251;
     text-align: center;
-    padding: .125rem .5rem;
+    padding: 0 30px;
     text-decoration: none;
     transition: all .2s;
+}
+
+@media screen and (max-width: 600px) {
+
+    .banner_home-hero, .headerSpacer {
+        display: none;
+    }
+    
+}
+
+body{
+    position: relative;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8 );
+}
+
+.popup {
+    position: absolute;
+    z-index: 9999 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #5c5c5c;
+    box-shadow: 0 0 10px #3b3b3b;
+    width: 500px;
+}
+
+.popup-content {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popup .close {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 10px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.popup input {
+
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    background-color: #000;
+    border: 1px solid #5c5c5c;
+}
+
+.popup select {
+    
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    background-color: #000;
+    border: 1px solid #5c5c5c;
+}
+
+@media screen and (max-width: 600px) {
+
+    .popup {
+
+        width: 340px;
+
+    }
+    
+}
+
+.popup button {
+
+    background-color: var(--dark--indigo-9);
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+.text-size-smal-banner{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 50px;
+    font-family: "Unbounded", serif;
+}
+
+.languageMobile{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .text-size-smal-banner {
+        
+        font-size: 1rem; 
+        line-height: 30px; 
+        margin: 10px 0;
+    }
+    
 }
 
 .banner_home-hero:hover {
@@ -11583,7 +11726,6 @@ em {
 
 .card_prompt {
     z-index: 1;
-    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -15805,7 +15947,7 @@ em {
     }
 
     .api_code {
-        max-width: 90vw;
+        max-width: 100vw;
     }
 
     .spacer-size-xxwide {
@@ -16306,7 +16448,7 @@ em {
     }
 
     .heading-style-h2 {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
 
     .heading-style-h4 {
@@ -16629,7 +16771,7 @@ em {
     .spacer-size-xxxbig,
     .spacer-size-xhuge,
     .spacer-size-huge {
-        padding-top: 3.5rem;
+        padding-top: 2.5rem;
     }
 
     .spacer-size-huge.is_visible-landscape,
@@ -17624,11 +17766,12 @@ em {
     .nav_links-menu {
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 0;
     }
 
     .nav_logo-link {
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .dropdown_nav-list._1.w--open {
@@ -19539,6 +19682,10 @@ em {
 @media screen and (max-width: 991px) {
     #w-node-_65248e8f-d02f-7004-f27f-ab11e6d68ee7-e6d68dda {
         justify-self: center;
+    }
+
+    .languageMobile{
+        display: block;
     }
 
     #w-node-_7b494d74-9dbb-09d3-79b1-d6e4a411ef8c-6e09f125 {
